@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="Matheus Olivera" content="">
+
+  <title>Trabalho de redes - HTTP</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    
+    <div class="container">
+      <a class="navbar-brand" href="home.html">HTTP MOZZILA</a>
+
+
+      
+        
+        
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+
+
+        <ul class="navbar-nav ml-auto">
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="res.html">API Rest</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/home-bg2.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1 id="topo">HTTP</h1>
+            <span class="subheading">Tudo que você precisa saber sobre HTTP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+
+          <h2 class="post-title">
+            O que é o HTTP?
+          </h2>
+          <p class="post-text">
+            Hypertext Transfer Protocol (HTTP) é um protocolo de camada de aplicação para transmissão de documentos
+            hipermídia, como o HTML. Foi desenvolvido para comunicação entre navegadores web e servidores web, porém
+            pode ser utilizado para outros propósitos também. Segue um modelo cliente-servidor clássico, onde um
+            cliente abre uma conexão, executa uma requisição e espera até receber uma resposta. É também um protocolo
+            sem estado ou stateless protocol, que significa que o servidor não mantem nenhum dado entre duas
+            requisições (state). Apesar de ser frequentemente baseado em uma camada TCP/IP, pode ser utilizado em
+            qualquer camada de transporte confiável, ou seja, um protocolo que não perde mensagens silenciosamente como
+            o UDP.
+          </p>
+
+        </div>
+        <hr>
+        <div class="post-preview">
+
+          <h2 class="post-title">
+            Uma visão geral do HTTP
+          </h2>
+          <p>
+            HTTP é um protocolo (protocol) que permite a obtenção de recursos, tais como documentos HTML. É a base de
+            qualquer troca de dados na Web e um protocolo cliente-servidor, o que significa que as requisições são
+            iniciadas pelo destinatário, geralmente um navegador da Web. Um documento completo é reconstruído a partir
+            dos diferentes sub-documentos obtidos, como por exemplo texto, descrição do layout, imagens, vídeos,
+            scripts e muito mais.
+          </p>
+          <img src="img/Fetching.png" class="img-fluid" alt="...">
+          <P>
+            Clientes e servidores se comunicam trocando mensagens individuais (em oposição a um fluxo de dados). As
+            mensagens enviadas pelo cliente, geralmente um navegador da Web, são chamadas de solicitações (requests),
+            ou também requisições, e as mensagens enviadas pelo servidor como resposta são chamadas de respostas
+            (responses).
+          </P>
+
+        </div>
+        <hr>
+        <div class="post-preview">
+
+          <h2 class="post-title">
+            Métodos de requisição HTTP
+          </h2>
+
+          <p>
+            O protocolo HTTP define um conjunto de métodos de requisição responsáveis por indicar a ação a ser
+            executada para um dado recurso. Embora esses métodos possam ser descritos como substantivos, eles também
+            são comumente referenciados como HTTP Verbs (Verbos HTTP). Cada um deles implementa uma semântica
+            diferente, mas alguns recursos são compartilhados por um grupo deles, como por exemplo, qualquer método de
+            requisição pode ser do tipo safe, idempotent ou cacheable.
+          </p>
+
+          <h4 class="post-text">
+            GET
+          </h4>
+          <P>
+            O método <b>GET</b> solicita a representação de um recurso específico. Requisições utilizando o método <b>GET</b>
+            devem retornar apenas dados.
+          </P>
+
+          <h4 class="post-text">
+            HEAD
+          </h4>
+          <P>
+            O método <b>HEAD</b> solicita uma resposta de forma idêntica ao método <b>GET</b>, porém sem conter o corpo
+            da resposta.
+          </P>
+
+          <h4 class="post-text">
+            POST
+          </h4>
+          <P>
+            O método <b>POST</b> é utilizado para submeter uma entidade a um recurso específico, frequentemente
+            causando uma mudança no estado do recurso ou efeitos colaterais no servidor.
+          </P>
+
+          <h4 class="post-text">
+            PUT
+          </h4>
+          <P>
+            O método <b>PUT</b> substitui todas as atuais representações do recurso de destino pela carga de dados da
+            requisição.
+          </P>
+
+          <h4 class="post-text">
+            DELETE
+          </h4>
+          <P>
+            O método <b>DELETE</b> remove um recurso específico.
+          </P>
+
+          <h4 class="post-text">
+            CONNECT
+          </h4>
+          <P>
+            O método <b>CONNECT</b> estabelece um túnel para o servidor identificado pelo recurso de destino.
+          </P>
+
+          <h4 class="post-text">
+            OPTIONS
+          </h4>
+          <P>
+            O método <b>OPTIONS</b> é usado para descrever as opções de comunicação com o recurso de destino.
+          </P>
+
+          <h4 class="post-text">
+            TRACE
+          </h4>
+          <P>
+            O método <b>TRACE</b> executa um teste de chamada loop-back junto com o caminho para o recurso de destino.
+          </P>
+
+          <h4 class="post-text">
+            PATCH
+          </h4>
+          <P>
+            O método <b>PATCH</b> é utilizado para aplicar modificações parciais em um recurso.
+          </P>
+
+          <p class="post-meta">Informações tiradas de
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP">MDN web docs</a>
+          </p>
+        </div>
+        <hr>
+
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-primary float-right" href="#topo">Voltar ao topo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+
+            <li class="list-inline-item">
+              <a href="https://github.com/Kirbyns" target="blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;Matheus Oliveira by Bootstrap</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+
+</html>
